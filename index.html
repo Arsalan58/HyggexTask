@@ -9,18 +9,6 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-
-    checkboxes.forEach(checkbox => {
-      checkbox.addEventListener('change', function () {
-        const content = this.nextElementSibling;
-        content.style.maxHeight = this.checked ? content.scrollHeight + 'px' : '0';
-      });
-    });
-  });
-</script>
     
   </body>
 </html>
