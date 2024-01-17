@@ -2,8 +2,8 @@ import * as React from "react";
 import "./index.css"
 import Navbar from "./components/Navbar";
 import Accordian from "./components/Accordian";
+
 export default function App(props) {
-  const [display, setDisplay] = React.useState("")
   return (
     <div className="bg-stone-50 flex flex-col items-stretch pt-7 pb-12 px-16 max-md:px-5">
       <div className="flex flex-col mb-48 mx-11 max-md:max-w-full max-md:mr-2.5 max-md:mb-10">
@@ -41,7 +41,7 @@ export default function App(props) {
             </span>
           </span>
         </div>
-        <div style={{ background: "linear-gradient(180deg, #06286E 0%, #164EC0 100%)", webkitBackgroundClip: "text", webkitTextFillColor: "transparent" }} className="text-center text-3xl font-bold bg-clip-text self-stretch mt-16 max-md:max-w-full max-md:mt-10">
+        <div style={{ background: "linear-gradient(180deg, #06286E 0%, #164EC0 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }} className="text-center text-3xl font-bold bg-clip-text self-stretch mt-16 max-md:max-w-full max-md:mt-10">
           Relations and Functions ( Mathematics )
         </div>
         <div className="justify-between items-stretch self-center flex gap-5 mt-14 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
@@ -141,9 +141,7 @@ export default function App(props) {
         <div className="text-5xl font-bold tracking-wide bg-clip-text self-stretch mt-40 max-md:max-w-full max-md:text-4xl max-md:mt-10">
           FAQ
         </div>
-        <div className="border  w-[848px] max-w-full gap-5 mt-8 rounded-xl border-solid border-blue-600 self-start max-md:flex-wrap ">
-         <Accordian/>
-        </div>
+        <Accordian/>
       </div>
     </div>
   );
