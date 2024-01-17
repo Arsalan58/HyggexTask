@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/components/Navbar.jsx","./src/App.jsx"],
+  content: ["./src/components/Navbar.jsx","./src/App.jsx","./src/components/Accordian.jsx"],
   theme: {
     colors: {
       transparent: 'transparent',
