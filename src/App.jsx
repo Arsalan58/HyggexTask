@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./index.css"
 import Navbar from "./components/Navbar";
-import Accordian from "../components/Accordian";
+import Accordian from "./components/Accordian";
 export default function App(props) {
   const [display, setDisplay] = React.useState("")
   return (
